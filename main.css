@@ -1,0 +1,117 @@
+:root {
+  --vermelho: #e50914; /*variáveis no css, utilizo quando tenho que repetir um certo estilo diversas vezes */
+  --preto: #141414;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*elementos base*/
+
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .contanier {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*criar espaços entre as tags na horizontal*/
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: arial black;
+  font-size: 40px;
+  margin-left: 5px; /*coloquei a logo 5px para a direita*/
+}
+
+header nav a {
+  color: #aaa;
+  margin-right: 16px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Filme principal*/
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5) 100%),
+    url(/img/fund.jpg);
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /*começa da esquerda */
+}
+
+.filme-principal .descricao {
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  margin-left: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 10px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all; /*muda o estilo da transição */
+  margin-left: 15px;
+}
+
+/*mudar o botão de cor quando passar o cursos */
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.contanier {
+  margin-left: 20px;
+}
+
+.filme-principal .contanier {
+  width: 80%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: var(--vermelho);
+  padding: 25px;
+}
+
+.footer .direito {
+  color: white;
+  justify-content: space-between;
+}
